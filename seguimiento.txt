@@ -1,0 +1,36 @@
+para este archivo de carga de base de datos se usa
+HTML, PHP con MYSQL,jQuery,boostrap,css y ajax 
+// base de datos
+tabla= "tblprod"
+variables= "id","prod_code",prod_ctry","prod_qty","price"
+ //index
+llama a todos los estilos relacioneados y los guarda todos en una carpeta 
+dps les llama a cada uno con su nombre para hacer mas lindo
+ademas incluye tres librerias de php que son para la carga, el edit, y el delete
+// crea un directorio llamado"HTML" y dentro estan las 3 acciones como archivos php
+// seguidamente crea una carpeta css y crea un archivo al cual llama"custom.css"
+// conecta la base de datos con mysqli y lo guarda en "conexion.php"
+// luego hace un archivo js que es llamado desde el index.php y se encarga de gestionar
+mediante jquery y ajax las peticiones de nuestro servidor en tiempo real
+//Para poder leer los archivos de la base de datos lo haremos mediante una
+petición ajax al servidor, dicha petición se realiza desde el archivo script.js.
+//La función JavaScript load(); se encarga de realizar una petición a un archivo
+llamado “listar_productos.php“, que lo hemos colocado dentro del directorio ajax.
+//El archivo anterior se conecta con la base de datos y realiza una consulta a 
+nuestra tabla. También nos devuelve los registros paginados, ya que hace una 
+include de un archivo nombrado “pagination.php“, siempre dentro del directorio ajax.
+
+
+
+
+primera diferencia es que en modal_add.php 
+en raza hay un name="code" y yo tengo name="editor_nombre"
+
+en el archivo js hay una diferencia en #edit_ProductModal
+
+
+en modal edit puse edit_editar_nombre:
+<input type="text" name="edit_editor_nombre"  id="edit_editor_nombre" class="form-control" required>
+<input type="hidden" name="edit_id" id="edit_id" >
+
+este era el error

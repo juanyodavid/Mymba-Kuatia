@@ -1,0 +1,61 @@
+en principal vista esta la direccion a raza que hay que cambiar a principal
+$con es el que pide permiso para la conexion con la base de datos, conexion php no necesita ningun cambio
+$sql es la variable encargada de hacer las acciones
+ mysqli_query realiza una consulta a la base de datos
+script.js se encarga de crud en el estan todos los formatos
+listar_productos.php es el que imprime y muestra la interfaz con es usuario
+
+
+cambiar en raza, al final
+
+si se quiere cambiar los codigos los que guardan o eliminan los datos estos se deben modificar el "script.js", "guardar_producto.php", "modal_add.php"
+modal_edit.php es la el pq no se puede cambiar el nombrecito del editor?
+
+en vista ususario cambiar "priduct_id" y los demas
+
+
+no me aparecen las fechas al editar probablemente por el formato en el que pido que imprima
+
+
+Crear un arreglo en php que va a tener el nombre de las columnas 
+
+la base de datos esta en todas las carpetas ajax, tmb en los archivos script
+
+
+ estaba buscando un falla al intentar cargar en la base de datos y al modificarlo
+ya que no permite, el posible error es que en vez de nombre_pot ,,, nom_potrero
+y el otro es que creo que al name se le cambio el nombre en uno de los archvivos y hay que buscar donde puede estar
+
+<input type="hidden" name="edit_id" id="edit_id" > // en modal_edit.php, evita el error de la ausencia de id
+
+buscar pq al editar no aparece los posibles cositos al editar
+
+
+en editar_producto.php
+$nombre = mysqli_real_escape_string($con,(strip_tags($_POST["editor_nombre"],ENT_QUOTES)));
+$descripcion = mysqli_real_escape_string($con,(strip_tags($_POST["edit_name"],ENT_QUOTES)));
+** en editor_nombre aqui estan los que guardan los datos para editar
+
+
+el error se encuentra en vista_usuario en <tbody> y otras partees al decir las variables y tb en las declaraciones
+de editar_producto.php
+
+
+en eliminar_productos encuentro $id_producto
+
+
+
+el id en modal edit dice que debe estar en el imput text antes de cambiar
+
+
+<a href="#"  data-target="#editProductModal" class="edit" data-toggle="modal" data-lote_add="<?php echo $nombre?>" data-observacion_add="<?php echo $observacion?>"
+data-fecha_add="<?php echo $fecha?>"data-id="<?php echo $product_id;?>">
+ESTA ES LA PARTE DEL FORMULARIO QUE APARECE EN LA PARTE DE EDITAR
+
+
+en vista_usuario linea 9 esta el query para buscar
+
+
+en vista_usuario bajo los titulos de id, lote y estas cosas aprox. linea 47 hay un <th></th>
+
+

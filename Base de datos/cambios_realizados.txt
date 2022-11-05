@@ -1,0 +1,37 @@
+detalle_venta:
+ID detalle#
+codigo de pesaje 
+precio por kilo#
+factura#
+tara desvaste(si, no) si si x1, sino por 0.96 el peso
+categoria#
+precio total por animal (peso x desvaste x precio por kilo)
+
+
+ venta:
+id_venta/////////////
+num_factura/////////////
+prec_tot_cat			#(suma todos los precios de = valor de venta por factura)
+cant_cat//
+valor_venta//////////////  #de la venta
+fecha///////////
+obs
+id_comprador foreingkey/////////////
+
+
+
+compradores##############
+id_comprador  auto_increment 
+nombre
+tel
+direc
+ruc
+obs
+
+categoria #####
+id_categoria auto_increment
+nom_categoria #puestos por la arp
+
+
+peso=NUMBER
+poner todos los id como auto increment
